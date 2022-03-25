@@ -8,6 +8,7 @@ import Component1 from './component/Component1';
 import Component2 from './component/Component2';
 import Component3 from './component/Component3';
 import Component4 from './component/Component4';
+import Component5 from './component/Component5';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Component2/>
     <Component3/>
     <Component4/>
+    <Component5/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

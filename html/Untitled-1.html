@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>react</title>
+</head>
+<body>
+  <div id="id"></div>
+  pp
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+    const Did="ii",content="hi",colour="purple";
+    const VDOM=(
+      <h1 className="cls" id={Did}>
+        <span style={{color:'blue'}}>{content}</span>
+        <span style={{color:colour}}>ah</span>
+      </h1>
+    )
+    ReactDOM.render(VDOM,document.getElementById('id'));
+  </script>
+  <style>
+    .cls {
+      background-color:red;
+    }
+  </style>
+</body>
+</html>

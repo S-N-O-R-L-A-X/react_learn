@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>react</title>
+</head>
+<body>
+  <div id="id"></div>
+  pp
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+    class MyComponent extends React.Component{
+      constructor(props){
+        super(props);
+        this.state={
+          good:true,
+          love:true,
+        }
+      }
+      render(){
+        return (
+          <div className="cls" onClick={func}>
+            <h1>sap!{this.state.good?"good":"excellent"}</h1>
+          </div>
+        )
+      }
+    }
+    // r.render(<MyComponent/>,document.getElementById('id'))
+    ReactDOM.render(<MyComponent/>,document.getElementById('id'));
+    function func(){
+      alert("clicked");
+    }
+    
+  </script>
+  <style>
+    .cls {
+      background-color:red;
+    }
+  </style>
+</body>
+</html>
