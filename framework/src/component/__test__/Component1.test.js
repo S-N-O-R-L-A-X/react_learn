@@ -9,8 +9,8 @@ import Component1 from '../Component1.js';
  */
 
 describe('Component1', () => {
-  it('1', () => {
-    const app = shallow(<Component1 />);
-    expect(app.containsMatchingElement(<div>My first class component.</div>)).toEqual(true);
+  const component1 = shallow(<Component1 />);
+  it('containsMatchingElement', () => {
+    expect(component1.containsMatchingElement(<div>My first class component.</div>)).toEqual(true);
   });
 });
